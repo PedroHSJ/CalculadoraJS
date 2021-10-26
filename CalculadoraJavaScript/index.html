@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculadora.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    
+    <script src="calculadora.js"></script>
+
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="calculadora-body">    
+    
+        <div class="tittle-calculadora">
+
+            <h1>Calculadora</h1>
+
+        </div>
+
+        <p id="resultado"></p>
+    
+        <div class="teclas">
+            
+            <table>
+                <tr>
+                    <td><button class="botao" onclick="clean()">C</button></td>
+                    <td><button class="botao" onclick="elevar()">x²</button></td>
+                    <td><button class="botao" onclick="insert('+')">+</button></td>
+                    <td><button class="botao" onclick="insert('-')">-</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="botao" onclick="insert('7')">7</button></td>
+                    <td><button class="botao" onclick="insert('8')">8</button></td>
+                    <td><button class="botao" onclick="insert('9')">9</button></td>
+                    <td><button class="botao" onclick="insert('*')">x</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="botao" onclick="insert('4')">4</button></td>
+                    <td><button class="botao" onclick="insert('5')">5</button></td>
+                    <td><button class="botao" onclick="insert('6')">6</button></td>
+                    <td><button class="botao" onclick="insert('/')">/</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="botao" onclick="insert('1')">1</button></td>
+                    <td><button class="botao" onclick="insert('2')">2</button></td>
+                    <td><button class="botao" onclick="insert('3')">3</button></td>
+                    <td rowspan="2"><button class="botao" id="igual" onclick="calcular()">=</button></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><button class="botao" id="zero" onclick="insert('0')">0</button></td>
+                    <td><button class="botao" onclick="insert('.')">.</button></td>
+
+                </tr>
+            </table>
+        </div>
+    </div>
+
+<footer>
+    <h1>2021 - @PedroHenrique</h1>
+
+    <ul>
+        <li> <a href="https://www.linkedin.com/in/pedro-henrique-352752212/" target="_blank"><i class="fab fa-linkedin"></i></a> </li>
+        <li> <a href="https://github.com/PedroHSJ" target="_blank"><i class="fab fa-github"></i></a></li>
+    </ul>
+</footer>
+</body>
+</html>

@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(imagens/p.jpG);
+    height: 100vh;
+}
+
+.calculadora-body{
+    border: 3px solid black;
+    border-radius: 15px;
+
+    box-shadow: 20px 20px 20px black;
+
+    height: 80vh;
+    width: 55vh;
+
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, 0.9);
+
+    font-family: 'Oswald', sans-serif;
+
+    position: absolute;
+    top: 10vh;
+    left: 35%;
+
+    
+}
+
+.calculadora-body h1{
+    color: #fff;
+}
+
+
+#resultado{
+    height: 7vh;
+    width: 80%;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    position: relative;
+    left: 30px;
+
+    background-color: #FFF;
+
+    color: #000;
+
+    font-size: 20pt;
+
+    text-align: right;
+
+    padding: 5px;
+}
+
+.teclas{
+    display: flex;
+    justify-content: center;
+    
+    position: relative;
+    top: 15px;
+
+    
+}
+
+.botao{
+    background-color: #444;
+
+    width: 70px;
+    height: 70px;
+
+    cursor: pointer;
+
+    border: none;
+
+    color: #FFF;
+
+    font-size: 18pt;
+
+    margin: 2px;
+}
+
+.botao:hover{
+    background-color: #333;
+
+    width: 70px;
+    height: 70px;
+
+    cursor: pointer;
+
+    border: none;
+
+    color: #FFF;
+
+    font-size: 18pt;
+}
+
+#igual{
+    height: 145px;
+
+}
+
+#zero{
+    width: 145px;
+
+}
+
+
+footer{
+    background-color: #000;
+
+    width: 100%;
+    height: 10vh;
+
+    position: absolute;
+    top: 100vh;
+
+    text-align: center;    
+}
+
+footer h1{
+    color: #FFF;
+    
+    font-size: 12pt;
+    font-weight: lighter;
+
+    font-family:  'Oswald', sans-serif;
+
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    font-size: 20pt;
+}
+
+footer li{
+    padding: 5px;
+}
+
+footer a{
+    text-decoration: underline;
+    color: #fff;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: #777;
+
+    transition: 0.3s all;
+}
+
+
+@media only screen and (max-width: 1360px) {
+    .calculadora-body{
+        border: 3px solid black;
+        border-radius: 15px;
+    
+        box-shadow: 20px 20px 50px black;
+    
+        height: 80vh;
+        width: 55vh;
+    
+        text-align: center;
+    
+        background-color: rgba(0, 0, 0, 0.8);
+    
+        font-family: 'Oswald', sans-serif;
+    
+        position: absolute;
+        top: 10vh;
+        left: 35%;
+    
+        
+    }
+    
+    
+#resultado{
+    height: 7vh;
+    width: 204px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    margin-left: 0px;
+
+    background-color: #FFF;
+
+    color: #000;
+
+    font-size: 20pt;
+
+    text-align: right;
+
+    padding: 5px;
+}
+    
+    .botao{
+        background-color: #444;
+    
+        width: 50px;
+        height: 50px;
+    
+        cursor: pointer;
+    
+        border: none;
+    
+        color: #FFF;
+    
+        font-size: 18pt;
+    
+        margin: 2px;
+    }
+
+    .botao:hover{
+        background-color: #333;
+    
+        width: 50px;
+        height: 50px;
+    
+        cursor: pointer;
+    
+        border: none;
+    
+        color: #FFF;
+    
+        font-size: 18pt;
+    }
+
+    #igual{
+        height: 104px;
+    
+    }
+    
+    #zero{
+        width: 104px;
+    
+    }
+
+    footer{
+        background-color: #000;
+    
+        width: 100%;
+        height: 13vh;
+    
+        position: absolute;
+        top: 100vh;
+    
+        text-align: center;    
+    }
+}
+
+@media only screen and (max-width: 670px) {    
+    .calculadora-body{
+        border: 3px solid black;
+        border-radius: 15px;
+    
+        box-shadow: 20px 20px 20px black;
+    
+        height: 70vh;
+        width: 44vh;
+    
+        text-align: center;
+    
+        background-color: rgba(0, 0, 0, 0.8);
+    
+        font-family: 'Oswald', sans-serif;
+    
+        position: absolute;
+        left: 40px;
+        top: 20vh;    
+    }
+
+    #resultado{
+        background-color: #fff;
+        
+        width: 250px;
+        height: 40px;
+
+        position: relative;
+        left: 0;
+        top: 5px;
+
+        margin: 0 20px 10px 20px;
+
+        padding: 0;
+        
+        
+    }
+
+    .botao{
+        width: 44pt;
+        height: 44pt;
+    }
+
+    .botao:hover{
+        width: 44pt;
+        height: 44pt;
+
+        background-color: #444;
+    
+    }
+    #igual{
+        height: 92pt;
+    
+    }
+    
+    #zero{
+        width: 92pt;
+    
+    }
+
+    footer{
+        height: max-content;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    footer h1{
+        font-size: 18pt;
+    }
+
+}
