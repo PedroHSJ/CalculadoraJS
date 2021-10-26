@@ -255,6 +255,9 @@ footer a:hover{
 }
 
 @media only screen and (max-width: 670px) {    
+    body{
+        background-image: url(imagens/p.jpG);
+    }
     .calculadora-body{
         border: 3px solid black;
         border-radius: 15px;
